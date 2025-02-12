@@ -1,0 +1,22 @@
+@use "../abstracts/abstracts" as ab;
+@use "../base/base" as base;
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: ab.$background-doc;
+  color: ab.$white-color;
+  font-family: base.$font1;
+  span {
+    font-family: base.$font2;
+    letter-spacing: -1px;
+    color: ab.$color5;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: base.$font3;
+    font-weight: 300;
+  }
+}

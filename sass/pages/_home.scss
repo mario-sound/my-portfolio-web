@@ -1,0 +1,144 @@
+@use "../abstracts/abstracts" as *;
+@use "../base/base" as base;
+
+main {
+  section.hero {
+    box-shadow: 0 0 10px $color3;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: $color1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    figure {
+      img {
+        width: 200px;
+        border-radius: 50%;
+        box-shadow: 0 0 50px $color3;
+      }
+    }
+    .tittle {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      h1 {
+        font-size: 1.7rem;
+        width: 80%;
+        strong {
+          font-weight: 300;
+          color: $color4;
+        }
+      }
+      span {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  section.description {
+    margin: 50px 0;
+    h2 {
+      color: $color4;
+    }
+    p {
+      padding: 20px 0 0 0;
+      color: $color5;
+    }
+  }
+
+  section.links {
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      gap: 250px;
+    }
+    img {
+      width: 320px;
+      transition: all 0.5s ease;
+      filter: drop-shadow(0px 0px 5px $color3);
+      &:hover {
+        fill: $color4;
+        filter: drop-shadow(0px 0px 5px $color1);
+      }
+    }
+    svg {
+      width: 40px;
+      fill: $color5;
+      transition: all 0.5s ease;
+      filter: drop-shadow(0px 0px 5px $color3);
+      &:hover {
+        fill: $color4;
+        filter: drop-shadow(0px 0px 5px $color1);
+      }
+    }
+  }
+
+  section.proyectos {
+    margin: 50px 0;
+    h2 {
+      color: $color4;
+    }
+
+    .project {
+      box-shadow: 0px 0px 15px $color5;
+      border-radius: 25px;
+      background-color: $color1-transparencia;
+      display: flex;
+      padding: 20px;
+      margin: 50px 0;
+      gap: 50px;
+
+      figure {
+        max-width: 50%;
+        img {
+          max-width: 100%;
+          border-radius: 25px;
+          box-shadow: 0px 0px 15px $color4;
+        }
+      }
+
+      > img {
+        max-width: 50%;
+
+        border-radius: 25px;
+        box-shadow: 0px 0px 15px $color4;
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h3 {
+          font-size: 2rem;
+          color: $color5;
+          padding-bottom: 30px;
+        }
+      }
+      .project-links {
+        ul {
+          list-style: none;
+          display: flex;
+          gap: 40px;
+          justify-content: flex-end;
+        }
+        a {
+          text-decoration: none;
+        }
+        svg {
+          max-width: 50px;
+          height: 40px;
+          fill: $color5;
+          transition: all 0.5s ease;
+          filter: drop-shadow(0px 0px 5px $color3);
+          &:hover {
+            fill: $color4;
+            filter: drop-shadow(0px 0px 5px $color1);
+          }
+        }
+      }
+    }
+  }
+}

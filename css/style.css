@@ -1,0 +1,334 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Sono";
+  src: url("../../css/fonts/Sono-ExtraBold.woff2") format("woff2"), url("../../css/fonts/Sono-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sono";
+  src: url("../../css/fonts/Sono-Bold.woff2") format("woff2"), url("../../css/fonts/Sono-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sono Monospace";
+  src: url("../../css/fonts/SonoMonospace-Medium.woff2") format("woff2"), url("../../css/fonts/SonoMonospace-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sono Monospace";
+  src: url("../../css/fonts/SonoMonospace-Light.woff2") format("woff2"), url("../../css/fonts/SonoMonospace-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sono Monospace";
+  src: url("../../css/fonts/SonoMonospace-ExtraLight.woff2") format("woff2"), url("../../css/fonts/SonoMonospace-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sono Monospace";
+  src: url("../../css/fonts/SonoMonospace-ExtraBold.woff2") format("woff2"), url("../../css/fonts/SonoMonospace-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sono";
+  src: url("../../css/fonts/Sono-Light.woff2") format("woff2"), url("../../css/fonts/Sono-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sono";
+  src: url("../../css/fonts/Sono-ExtraLight.woff2") format("woff2"), url("../../css/fonts/Sono-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sono";
+  src: url("../../css/fonts/Sono-Medium.woff2") format("woff2"), url("../../css/fonts/Sono-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sono Monospace";
+  src: url("../../css/fonts/SonoMonospace-Bold.woff2") format("woff2"), url("../../css/fonts/SonoMonospace-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sono";
+  src: url("../../css/fonts/Sono-Regular.woff2") format("woff2"), url("../../css/fonts/Sono-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sono Monospace";
+  src: url("../../css/fonts/SonoMonospace-SemiBold.woff2") format("woff2"), url("../../css/fonts/SonoMonospace-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sono Monospace";
+  src: url("../../css/fonts/SonoMonospace-Regular.woff2") format("woff2"), url("../../css/fonts/SonoMonospace-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sono";
+  src: url("../../css/fonts/Sono-SemiBold.woff2") format("woff2"), url("../../css/fonts/Sono-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alexandria";
+  src: url("../../css/fonts/Alexandria-Black.woff2") format("woff2"), url("../../css/fonts/Alexandria-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alexandria";
+  src: url("../../css/fonts/Alexandria-ExtraBold.woff2") format("woff2"), url("../../css/fonts/Alexandria-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alexandria";
+  src: url("../../css/fonts/Alexandria-Bold.woff2") format("woff2"), url("../../css/fonts/Alexandria-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alexandria";
+  src: url("../../css/fonts/Alexandria-SemiBold.woff2") format("woff2"), url("../../css/fonts/Alexandria-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alexandria";
+  src: url("../../css/fonts/Alexandria-Thin.woff2") format("woff2"), url("../../css/fonts/Alexandria-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alexandria";
+  src: url("../../css/fonts/Alexandria-Light.woff2") format("woff2"), url("../../css/fonts/Alexandria-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alexandria";
+  src: url("../../css/fonts/Alexandria-Medium.woff2") format("woff2"), url("../../css/fonts/Alexandria-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alexandria";
+  src: url("../../css/fonts/Alexandria-Regular.woff2") format("woff2"), url("../../css/fonts/Alexandria-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alexandria";
+  src: url("../../css/fonts/Alexandria-ExtraLight.woff2") format("woff2"), url("../../css/fonts/Alexandria-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+a#whatsapp-btn {
+  display: inline-block;
+  fill: #25d366;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+@media (min-width: 768px) {
+  a#whatsapp-btn {
+    bottom: 50px;
+    right: 50px;
+  }
+}
+a#whatsapp-btn svg {
+  width: 30px;
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  transition: all 0.2s ease;
+}
+@media (min-width: 768px) {
+  a#whatsapp-btn svg {
+    width: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  a#whatsapp-btn svg {
+    width: 40px;
+  }
+}
+a#whatsapp-btn:hover svg {
+  fill: #8d95fb;
+}
+
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+header.header figure img {
+  transform: translateX(-45px);
+  width: 300px;
+}
+header.header ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+header.header ul li a {
+  text-decoration: none;
+  color: #8d95fb;
+}
+header.header ul li a:hover {
+  color: #dfddf6;
+}
+
+main section.hero {
+  box-shadow: 0 0 10px #4f5aa8;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #140f07;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+main section.hero figure img {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 50px #4f5aa8;
+}
+main section.hero .tittle {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main section.hero .tittle h1 {
+  font-size: 1.7rem;
+  width: 80%;
+}
+main section.hero .tittle h1 strong {
+  font-weight: 300;
+  color: #8d95fb;
+}
+main section.hero .tittle span {
+  font-size: 1.2rem;
+}
+main section.links {
+  margin: 50px 0;
+}
+main section.links h2 {
+  color: #8d95fb;
+}
+main section.links .project {
+  box-shadow: 0px 0px 15px #dfddf6;
+  border-radius: 25px;
+  background-color: rgba(20, 15, 7, 0.5);
+  display: flex;
+  padding: 20px;
+  margin: 50px 0;
+  gap: 50px;
+}
+main section.links .project figure {
+  max-width: 50%;
+}
+main section.links .project figure img {
+  max-width: 100%;
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px #8d95fb;
+}
+main section.links .project > img {
+  max-width: 50%;
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px #8d95fb;
+}
+main section.links .project__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main section.links .project__text h3 {
+  font-size: 2rem;
+  color: #dfddf6;
+  padding-bottom: 30px;
+}
+main section.links .project .project-links ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+}
+main section.links .project .project-links a {
+  text-decoration: none;
+}
+main section.links .project .project-links svg {
+  max-width: 50px;
+  height: 40px;
+  fill: #dfddf6;
+  transition: all 0.5s ease;
+  filter: drop-shadow(0px 0px 5px #4f5aa8);
+}
+main section.links .project .project-links svg:hover {
+  fill: #8d95fb;
+  filter: drop-shadow(0px 0px 5px #140f07);
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(0.25turn, #1f274c, #140f07);
+  color: #ebebeb;
+  font-family: "Sono";
+}
+body span {
+  font-family: "Sono Monospace";
+  letter-spacing: -1px;
+  color: #dfddf6;
+}
+body h1,
+body h2,
+body h3,
+body h4 {
+  font-family: "Alexandria";
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=style.css.map */

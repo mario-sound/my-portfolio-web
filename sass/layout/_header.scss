@@ -1,13 +1,21 @@
-@use "../abstracts/abstracts" as ab;
-@use "../base/base" as base;
+@use "../abstracts/abstracts" as *;
+@use "../base/base" as *;
 
 header.header {
-  display: flex;
+  @include breakpoint(tablet) {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 40px 0;
   figure {
+    text-align: center;
     img {
+      @include breakpoint(tablet) {
+      }
       transform: translateX(-45px);
       width: 300px;
     }
@@ -19,9 +27,9 @@ header.header {
     li {
       a {
         text-decoration: none;
-        color: ab.$color4;
+        color: $color4;
         &:hover {
-          color: ab.$color5;
+          color: $color5;
         }
       }
     }

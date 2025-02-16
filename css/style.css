@@ -169,14 +169,22 @@ a#whatsapp-btn {
   display: inline-block;
   fill: #25d366;
   border-radius: 50%;
+  z-index: 5;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
 }
 @media (min-width: 768px) {
   a#whatsapp-btn {
-    bottom: 50px;
-    right: 50px;
+    top: 10px;
+    right: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  a#whatsapp-btn {
+    top: auto;
+    bottom: 20px;
+    right: 20px;
   }
 }
 a#whatsapp-btn svg {
@@ -199,10 +207,20 @@ a#whatsapp-btn:hover svg {
 }
 
 header.header {
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 40px 0;
+}
+@media (min-width: 768px) {
+  header.header {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+}
+header.header figure {
+  text-align: center;
 }
 header.header figure img {
   transform: translateX(-45px);
@@ -221,15 +239,26 @@ header.header ul li a:hover {
   color: #dfddf6;
 }
 
+#whatsapp-btn {
+  z-index: 5;
+}
+
 main section.hero {
   box-shadow: 0 0 10px #4f5aa8;
   padding: 30px;
   border-radius: 20px;
   background-color: #140f07;
+  gap: 25px;
+  flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 100px;
+}
+@media (min-width: 768px) {
+  main section.hero {
+    flex-direction: row;
+    gap: 100px;
+  }
 }
 main section.hero figure img {
   width: 200px;
@@ -262,6 +291,17 @@ main section.description p {
   padding: 20px 0 0 0;
   color: #dfddf6;
 }
+main section.links ul {
+  flex-direction: column;
+}
+main section.links ul img {
+  width: 250px;
+}
+@media (min-width: 768px) {
+  main section.links ul img {
+    width: 320px;
+  }
+}
 main section.links,
 main section.proyectos {
   margin: 50px 0;
@@ -275,14 +315,31 @@ main section.proyectos ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  align-items: baseline;
-  gap: 250px;
+  align-items: flex-start;
+  padding-left: 20px;
+  gap: 25px;
+}
+@media (min-width: 768px) {
+  main section.links ul,
+  main section.proyectos ul {
+    flex-direction: row;
+    gap: 250px;
+    align-items: baseline;
+    padding-left: 0;
+  }
 }
 main section.links img,
 main section.proyectos img {
-  width: 320px;
+  width: 250px;
+  width: 400px;
   transition: all 0.5s ease;
   filter: drop-shadow(0px 0px 5px #4f5aa8);
+}
+@media (min-width: 768px) {
+  main section.links img,
+  main section.proyectos img {
+    width: 320px;
+  }
 }
 main section.links img:hover,
 main section.proyectos img:hover {
@@ -309,13 +366,26 @@ main section.proyectos article.project {
   background-color: #140f07;
   margin: 50px 0;
   display: flex;
+  flex-direction: column;
   gap: 50px;
+}
+@media (min-width: 1024px) {
+  main section.links article.project,
+  main section.proyectos article.project {
+    flex-direction: row;
+  }
 }
 main section.links article.project img,
 main section.proyectos article.project img {
-  width: 50%;
+  width: 100%;
   border-radius: 25px;
   box-shadow: 0 0 10px #1f274c;
+}
+@media (min-width: 1024px) {
+  main section.links article.project img,
+  main section.proyectos article.project img {
+    width: 50%;
+  }
 }
 main section.links article.project h3,
 main section.proyectos article.project h3 {
@@ -330,17 +400,39 @@ main section.proyectos article.project .project__text {
 }
 main section.links article.project .project-links ul,
 main section.proyectos article.project .project-links ul {
+  margin-top: 50px;
   display: flex;
   justify-content: flex-end;
   gap: 50px;
 }
+@media (min-width: 768px) {
+  main section.links article.project .project-links ul,
+  main section.proyectos article.project .project-links ul {
+    margin-top: 0px;
+  }
+}
 
 body {
-  max-width: 1200px;
+  max-width: 380px;
   margin: 0 auto;
   background: linear-gradient(0.25turn, #1f274c, #140f07);
   color: #ebebeb;
   font-family: "Sono";
+}
+@media (min-width: 768px) {
+  body {
+    max-width: 720px;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    max-width: 1200px;
+  }
 }
 body span {
   font-family: "Sono Monospace";

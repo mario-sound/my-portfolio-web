@@ -1,33 +1,39 @@
 @forward "buttons";
 
-@use "../abstracts/abstracts" as abstracts;
+@use "../abstracts/abstracts" as *;
 
 a#whatsapp-btn {
   display: inline-block;
   fill: (#25d366);
   border-radius: 50%;
+  z-index: 5;
 
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  @include abstracts.breakpoint(tablet) {
-    bottom: 50px;
-    right: 50px;
+  top: 10px;
+  right: 10px;
+  @include breakpoint(tablet) {
+    top: 10px;
+    right: 20px;
+  }
+  @include breakpoint(tablethorizontal) {
+    top: auto;
+    bottom: 20px;
+    right: 20px;
   }
   svg {
     width: 30px;
     filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
-    @include abstracts.breakpoint(tablet) {
+    @include breakpoint(tablet) {
       width: 35px;
     }
-    @include abstracts.breakpoint(desktop) {
+    @include breakpoint(desktop) {
       width: 40px;
     }
     transition: all 0.2s ease;
   }
   &:hover {
     svg {
-      fill: abstracts.$color4;
+      fill: $color4;
     }
   }
 }

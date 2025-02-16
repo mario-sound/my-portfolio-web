@@ -1,16 +1,25 @@
 @use "../abstracts/abstracts" as *;
 @use "../base/base" as base;
 
+#whatsapp-btn {
+  z-index: 5;
+}
+
 main {
   section.hero {
     box-shadow: 0 0 10px $color3;
     padding: 30px;
     border-radius: 20px;
     background-color: $color1;
+    @include breakpoint(tablet) {
+      flex-direction: row;
+      gap: 100px;
+    }
+    gap: 25px;
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 100px;
     figure {
       img {
         width: 200px;
@@ -47,22 +56,44 @@ main {
     }
   }
 
+  section.links {
+    ul {
+      flex-direction: column;
+      img {
+        width: 250px;
+        @include breakpoint(tablet) {
+          width: 320px;
+        }
+      }
+    }
+  }
+
   section.links,
   section.proyectos {
     margin: 50px 0;
     h2 {
       color: $color4;
     }
-
     ul {
+      @include breakpoint(tablet) {
+        flex-direction: row;
+        gap: 250px;
+        align-items: baseline;
+        padding-left: 0;
+      }
       list-style: none;
       display: flex;
       justify-content: center;
-      align-items: baseline;
-      gap: 250px;
+      align-items: flex-start;
+      padding-left: 20px;
+      gap: 25px;
     }
     img {
-      width: 320px;
+      width: 250px;
+      @include breakpoint(tablet) {
+        width: 320px;
+      }
+      width: 400px;
       transition: all 0.5s ease;
       filter: drop-shadow(0px 0px 5px $color3);
       &:hover {
@@ -87,9 +118,16 @@ main {
       background-color: $color1;
       margin: 50px 0;
       display: flex;
+      flex-direction: column;
       gap: 50px;
+      @include breakpoint(tablethorizontal) {
+        flex-direction: row;
+      }
       img {
-        width: 50%;
+        @include breakpoint(tablethorizontal) {
+          width: 50%;
+        }
+        width: 100%;
         border-radius: 25px;
         box-shadow: 0 0 10px $color2;
       }
@@ -104,6 +142,10 @@ main {
       }
       .project-links {
         ul {
+          margin-top: 50px;
+          @include breakpoint(tablet) {
+            margin-top: 0px;
+          }
           display: flex;
           justify-content: flex-end;
           gap: 50px;

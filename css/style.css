@@ -410,6 +410,7 @@ main section.proyectos article.project .project-links ul {
 
 body {
   max-width: 380px;
+  padding: 0 16px;
   margin: 0 auto;
   background: linear-gradient(0.25turn, #1f274c, #140f07);
   color: #ebebeb;

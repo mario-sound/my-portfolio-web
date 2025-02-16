@@ -3,6 +3,7 @@
 
 body {
   max-width: 380px;
+  padding: 0 16px;
   @include breakpoint(tablet) {
     max-width: 720px;
   }
